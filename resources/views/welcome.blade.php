@@ -45,11 +45,7 @@
     <body>
         <div class="container">
             <div class="content">
-<<<<<<< HEAD
-                <div class="title"> Welcome!</div>
-=======
-                <div class="title"> Я изменил это! </div>
->>>>>>> origin/master
+                <div class="title"> Welcome</div>
             </div>
         </div>
     </div>
