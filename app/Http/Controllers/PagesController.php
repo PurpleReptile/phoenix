@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 class PagesController extends Controller {
 
     public function getHome() {
-        return view('welcome');
+        return view('pages.welcome');
     }
 
     public function getAbout() {
@@ -19,7 +19,7 @@ class PagesController extends Controller {
         $arr['fullname'] = $fullname;
         $arr['email'] = $email;
 
-        return view('about')->withData($arr);
+        return view('pages.about')->withData($arr);
     }
 
 }
