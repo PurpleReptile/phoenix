@@ -45,7 +45,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title"> Welcome, my friend! </div>
+                <div class="title"> Welcome, my friend! =)</div>
             </div>
         </div>
     </div>
