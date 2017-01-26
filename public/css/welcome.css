@@ -33,6 +33,16 @@
     width: auto;
 }
 
+.navbar-social_networks {
+    padding: 0px;
+}
+.navbar-social_networks>img {
+    height: 100%;
+    padding: 0.5em;
+    width: auto;
+}
+
+
 .navbar-nav li > a {
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -42,4 +52,74 @@
 /* main content welcome */
 .jumbotron {
     background-color: #f7f7f7;
+}
+
+
+.social {
+    position: relative;
+    height: 2.7em;
+    width: 14em;
+    margin: 1em 0em;
+}
+
+.social li {
+    display: block;
+    height: 2.7em;
+    position: absolute;
+    -webkit-transition: -webkit-transform .7s;
+    -moz-transition: -moz-transform .7s;
+    -ms-transition: -ms-transform .7s;
+    -o-transition: -o-transform .7s;
+    transition: transform .7s;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    text-align: center;
+    width: 2.7em;
+
+}
+
+.social a {
+    color: #fffdf0;
+    display: block;
+    line-height: 5.5em;
+    font-size: 0.7em;
+    text-align: center;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    width: 4em; 
+}
+
+.social a:hover {
+    color: #ff0000;
+}
+
+.social li:hover {
+  -webkit-transform: scale(1.3,1.3) rotate(10deg);
+    -moz-transform: scale(1.3,1.3) rotate(10deg);
+  -ms-transform: scale(1.3,1.3) rotate(10deg);
+    -o-transform: scale(1.3,1.3) rotate(10deg);
+  transform: scale(1.3,1.3) rotate(10deg);
+}
+
+.facebook {
+    background: #333333;
+    left: 0;
+    top: 0%;
+}
+
+.twitter {
+    background: #333333;
+    bottom: 0;
+    left: 25%;
+}
+.vk {
+    background: #333333;
+    bottom: 0;
+    left: 50%;
 }
