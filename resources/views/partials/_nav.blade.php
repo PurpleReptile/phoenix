@@ -14,7 +14,7 @@
                     <a href="/" title="Блог">| Блог</a>
                 </li>
                 <li class="nav_a">
-                    <a href="/" title="Блог">| Обсуждения</a>
+                    <a href="/" title="Обсуждения">| Обсуждения</a>
                 </li>
                 <li class="nav_a">
                     <a href="/" title="Приложения">| Приложения</a>
