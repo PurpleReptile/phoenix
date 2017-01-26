@@ -2,6 +2,14 @@
     background-color: #f7f7f7;
 }
 
+#link_logo {
+    padding-left: 0.5em;
+}
+
+#reg_and_sign_up {
+    padding-right: 1em;
+}
+
 .nav_a a {
     color: #333333;
     padding-left: 0;

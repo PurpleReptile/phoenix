@@ -1,21 +1,12 @@
-
-
 <header class="navbar navbar-static-top" id="top_nav">
     <div class="container">
         <nav class="collapse navbar-collapse"> 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">
-                    <img src="../../../public/img/smile.svg" id="img_topnav">
-                </a>
-            </div>
+
+            <a class="navbar-brand" href="/" id="link_logo">
+                <img src="../../../public/img/smile.svg" id="img_topnav">
+            </a>
 
             <ul class="nav navbar-nav">
-
                 <li class="nav_a active_li">
                     <a href="/" title="Главная">| Главная</a>
                 </li>
@@ -29,7 +20,7 @@
                     <a href="/about" title="О сайте">| О сайте</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" id="reg_and_sign_up">
                 <li class="nav_a">
                     <a href="/" title="Регистрация">Регистрация</a>
                 </li>
@@ -45,5 +36,3 @@
         </nav>
     </div>
 </header>
-
-
