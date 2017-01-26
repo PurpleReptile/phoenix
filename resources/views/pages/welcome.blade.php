@@ -18,12 +18,12 @@
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
         </div>
         <div class="col-sm-4">
-            <h3>Приложения</h3>
+            <h3>Обсуждения</h3>        
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
         </div>
         <div class="col-sm-4">
-            <h3>Обсуждения</h3>        
+            <h3>Приложения</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
         </div>
