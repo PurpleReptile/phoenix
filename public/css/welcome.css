@@ -1,12 +1,13 @@
-.navbar {
+#top_nav {
     background-color: #f7f7f7;
 }
-.nav a {
-    color: black;
-    padding: 0.2em;
-} 
 
-.nav a:hover {
+.nav_a a {
+    color: #333333;
+    padding-left: 0;
+}
+
+.nav_a a:hover {
     color: #D70C01;
 }
 
@@ -15,7 +16,22 @@
     background-color: #D70C01;
 } 
 
-#form_search {
-    margin-bottom: 0;
-    padding: 0;
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand>img {
+    height: 100%;
+    padding: 0.5em;
+    width: auto;
+}
+
+.navbar-nav li > a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+} 
+
+
+/* main content welcome */
+.jumbotron {
+    background-color: #f7f7f7;
 }

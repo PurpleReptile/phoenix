@@ -4,9 +4,9 @@
 
 @section('content')
 <div class="container">
-    <div class="text-left">
+    <div class="jumbotron">
         <h1>Название сайта</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p> 
     </div>
 </div>
 

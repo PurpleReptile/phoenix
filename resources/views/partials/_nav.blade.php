@@ -1,44 +1,49 @@
-<nav class="navbar">
+
+
+<header class="navbar navbar-static-top" id="top_nav">
     <div class="container">
-        <div class="row">
-
-            <div class="col-lg-8 ">
-                <div class="navbar-header">
-                    <img><a class="navbar-brand" href="/">Logo</a></img>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active_li">
-                        <a class="nav-link" href="/">| Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">| Блог</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">| Приложения</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">| О сайте</a>
-                    </li>
-                </ul>
+        <nav class="collapse navbar-collapse"> 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img src="../../../public/img/smile.svg" id="img_topnav">
+                </a>
             </div>
 
-            <div class="col-lg-4 text-right">
-                <div class="navbar-header">
-                    <form class="navbar-form" id="form_search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Поиск">
-                        </div>
-                    </form>
+            <ul class="nav navbar-nav">
+
+                <li class="nav_a active_li">
+                    <a href="/" title="Главная">| Главная</a>
+                </li>
+                <li class="nav_a">
+                    <a href="/" title="Блог">| Блог</a>
+                </li>
+                <li class="nav_a">
+                    <a href="/" title="Приложения">| Приложения</a>
+                </li>
+                <li class="nav_a">
+                    <a href="/about" title="О сайте">| О сайте</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav_a">
+                    <a href="/" title="Регистрация">Регистрация</a>
+                </li>
+                <li class="nav_a">
+                    <a href="/" title="Вход">Вход</a>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" id="field_search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Поиск">
                 </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Регистрация</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Вход</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            </form>
+        </nav>
     </div>
-</nav> 
+</header>
+
+
