@@ -3,29 +3,82 @@
 @section('title', '| Главная')
 
 @section('content')
-<div class="container">
-    <div class="jumbotron">
-        <h1>Название сайта</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p> 
+<div id="promo">
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Добро пожаловать!</h1>
+            <p>Сайт для всех и ни для кого</p> 
+        </div>
     </div>
 </div>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-            <h3>Блог</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            <div class="page-header">
+                <h3>Блог</h3>
+            </div>
+            <ul class="welcome_li">
+                <li class="invalid nav-item">
+                    <a>| Мой сосед - дрель</a>
+                </li>
+                <li class="invalid nav-item">
+                    <a>| Пигментация кожи не спасает от очередей</a>
+                </li>
+                <li class="invalid nav-item">
+                    <a>| Бегал по стенам? - Легко!</a>
+                </li>
+                <li class="invalid nav-item">
+                    <a>| Артроплевра</a>
+                </li>
+                <li class="invalid nav-item">
+                    <a>| Почему Майкл Джексон не любил загорать?</a>
+                </li>
+            </ul>
         </div>
         <div class="col-sm-4">
-            <h3>Обсуждения</h3>        
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            <div class="page-header">
+                <h3>Обсуждения</h3>
+            </div>
+            <ul class="welcome_li">
+                <li class="invalid nav-item">
+                    <a>| Мой сосед - дрель</a>
+                </li>
+                <li class="invalid nav-item">
+                    <a>| Пигментация кожи не спасает от очередей</a>
+                </li>
+                <li class="invalid nav-item">
+                    <a>| Бегал по стенам? - Легко!</a>
+                </li>
+                <li class="invalid nav-item">
+                    <a>| Артроплевра</a>
+                </li>
+                <li class="invalid nav-item">
+                    <a>| Почему Майкл Джексон не любил загорать?</a>
+                </li>
+            </ul>
         </div>
         <div class="col-sm-4">
-            <h3>Приложения</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            <div class="page-header">
+                <h3>Приложения</h3>
+            </div>
+            <ul class="welcome_li">
+                <li class="invalid nav-item">
+                    <a>| Мой сосед - дрель</a>
+                </li>
+                <li class="invalid nav-item">
+                    <a>| Пигментация кожи не спасает от очередей</a>
+                </li>
+                <li class="invalid nav-item">
+                    <a>| Бегал по стенам? - Легко!</a>
+                </li>
+                <li class="invalid nav-item">
+                    <a>| Артроплевра</a>
+                </li>
+                <li class="invalid nav-item">
+                    <a>| Почему Майкл Джексон не любил загорать?</a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

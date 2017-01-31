@@ -1,28 +1,10 @@
-#top_nav {
+#topnav_main {
     background-color: #f7f7f7;
 }
 
-#link_logo {
-    padding-left: 0.5em;
+#topnav_main .navbar-brand {
+    margin-left: 0px;
 }
-
-#reg_and_sign_up {
-    padding-right: 1em;
-}
-
-.nav_a a {
-    color: #333333;
-    padding-left: 0;
-}
-
-.nav_a a:hover {
-    color: #D70C01;
-}
-
-.active_li a{
-    color: white;
-    background-color: #D70C01;
-} 
 
 .navbar-brand {
     padding: 0px;
@@ -33,29 +15,74 @@
     width: auto;
 }
 
-.navbar-social_networks {
-    padding: 0px;
-}
-.navbar-social_networks>img {
-    height: 100%;
-    padding: 0.5em;
-    width: auto;
-}
-
-
-.navbar-nav li > a {
+#topnav a {
+    color: #333;
     padding-left: 0.5em;
     padding-right: 0.5em;
-} 
-
-
-/* main content welcome */
-.jumbotron {
-    background-color: #f7f7f7;
 }
 
+#topnav a:hover {
+    color: #D70C01;
+    background-color: #e7e7e7;
+}
+
+.navbar-right {
+    margin-right: 0px;
+}
+
+#topnav_main .active_li > a {
+    color: #f7f7f7;
+    background-color: #D70C01;
+}
+
+/**************************** BEGIN main content welcome ****************************/
+#promo {
+    margin-top: 5em;
+    text-align: center;
+    background: url(../img/background_3.jpg) no-repeat;
+    background-size: cover;
+}
+#promo .jumbotron {
+    margin: 1em 0px;
+    background-color: rgba(255, 255, 255, 0.75);
+    /*background-color: #f7f7f7;*/
+}
+.page-header {
+    margin-top: 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+.welcome_li {
+    padding-left: 0.5em;
+    text-indent: -0.5em;
+    list-style: none;
+}
+.welcome_li li {
+    cursor: pointer;
+    padding-bottom: 0.2em;
+}
+.welcome_li li:last-child {
+    padding-bottom: 0px;
+}
+.welcome_li a {
+    color: #333;
+    text-decoration: none;
+    display: block; 
+    width: 100%; 
+    height: 100%;
+    padding: 0.1em;
+}
+.welcome_li a:hover {
+    color: #D70C01;
+    background-color: #e7e7e7;
+}
+/**************************** END main content welcome ****************************/
+
+
+/**************************** BEGIN footer ****************************/
 .footer {
+    margin-top: 2em;
     background-color: #f7f7f7;
+    border-top: 1px solid #e7e7e7;
 }
 
 .social_panel {
@@ -63,7 +90,6 @@
 }
 
 .social_panel li {
-    
     -webkit-transition: -webkit-transform .7s;
     -moz-transition: -moz-transform .7s;
     -ms-transition: -ms-transform .7s;
@@ -77,7 +103,6 @@
 }
 
 .social_panel li:hover {
-    
     -webkit-transform: scale(1.3,1.3) rotate(10deg);
     -moz-transform: scale(1.3,1.3) rotate(10deg);
     -ms-transform: scale(1.3,1.3) rotate(10deg);
@@ -96,78 +121,4 @@
 #copy_right p {
     margin-top: 1.2em;
 }
-
-
-
-
-/*
-.social {
-    position: relative;
-    height: 2.7em;
-    width: 14em;
-    margin: 1em 0em;
-}
-
-.social li {
-    display: block;
-    height: 2.7em;
-    position: absolute;
-    -webkit-transition: -webkit-transform .7s;
-    -moz-transition: -moz-transform .7s;
-    -ms-transition: -ms-transform .7s;
-    -o-transition: -o-transform .7s;
-    transition: transform .7s;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    text-align: center;
-    width: 2.7em;
-
-}
-
-.social a {
-    color: #fffdf0;
-    display: block;
-    line-height: 5.5em;
-    font-size: 0.7em;
-    text-align: center;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    width: 4em; 
-}
-
-.social a:hover {
-    color: #ff0000;
-}
-
-.social li:hover {
-  -webkit-transform: scale(1.3,1.3) rotate(10deg);
-    -moz-transform: scale(1.3,1.3) rotate(10deg);
-  -ms-transform: scale(1.3,1.3) rotate(10deg);
-    -o-transform: scale(1.3,1.3) rotate(10deg);
-  transform: scale(1.3,1.3) rotate(10deg);
-}
-
-.facebook {
-    background: #333333;
-    left: 0;
-    top: 0%;
-}
-
-.twitter {
-    background: #333333;
-    bottom: 0;
-    left: 25%;
-}
-.vk {
-    background: #333333;
-    bottom: 0;
-    left: 50%;
-}
-
-*/
+/**************************** END footer ****************************/
