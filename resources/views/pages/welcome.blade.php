@@ -7,7 +7,9 @@
     <div class="container">
         <div class="jumbotron">
             <h1>Добро пожаловать!</h1>
-            <p>Сайт для всех и ни для кого</p> 
+            <p>Сайт для всех и ни для кого
+                <a href="/about" class="btn btn_general" role="button" title="О сайте">О сайте</a>
+            </p>
         </div>
     </div>
 </div>

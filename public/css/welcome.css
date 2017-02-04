@@ -1,51 +1,81 @@
+/*
+
+        << general >>
+
+color:                  #f7f7f7;
+background-color:       #D70C01;
+border-color:           #f7f7f7;
+
+        << link <a> >> 
+
+color:                  #333;
+hover-color:            #D70C01;
+hover-background-color: #e7e7e7;
+
+*/
+
+/**************************** BEGIN navigator ****************************/
 #topnav_main {
     background-color: #f7f7f7;
 }
-
 #topnav_main .navbar-brand {
     margin-left: 0px;
 }
-
 .navbar-brand {
     padding: 0px;
 }
 .navbar-brand>img {
     height: 100%;
-    padding: 0.5em;
+    padding: 0.5em 1em 0.5em 0;
     width: auto;
 }
-
 #topnav a {
     color: #333;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
-
 #topnav a:hover {
     color: #D70C01;
     background-color: #e7e7e7;
 }
-
 .navbar-right {
     margin-right: 0px;
 }
-
 #topnav_main .active_li > a {
     color: #f7f7f7;
     background-color: #D70C01;
 }
+/**************************** END navigator ****************************/
 
-/**************************** BEGIN main content welcome ****************************/
+
+/**************************** BEGIN page welcome ****************************/
 #promo {
     margin-top: 5em;
     text-align: center;
-    background: url(../img/background_3.jpg) no-repeat;
+    background: url(../img/background.jpg) no-repeat;
     background-size: cover;
 }
 #promo .jumbotron {
     margin: 1em 0px;
     background-color: rgba(255, 255, 255, 0.75);
-    /*background-color: #f7f7f7;*/
+}
+.btn_general {
+    border: 0.1em solid  #D70C01;
+    color: #333;
+    background-color: white;
+    transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s; 
+}
+.btn_general:hover {
+    color: #f7f7f7;
+    background-color: #D70C01;
+    border-color: #f7f7f7;
+    box-shadow: 0px 0px 0px 2em #D70C01 inset, 0px 3px 3px -1px rgba(0, 0, 0, 0.2);
+}
+.indent_left {
+    margin-left: 0.5em;
 }
 .page-header {
     margin-top: 0;
@@ -69,26 +99,83 @@
     display: block; 
     width: 100%; 
     height: 100%;
-    padding: 0.1em;
+    padding: 0.1em 0;
 }
 .welcome_li a:hover {
     color: #D70C01;
     background-color: #e7e7e7;
 }
-/**************************** END main content welcome ****************************/
+/**************************** END page welcome ****************************/
+
+/**************************** BEGIN page blog ****************************/
+#block_blog {
+    margin: 1.1em 0;
+}
+.title_blog h2 {
+    margin: 0;
+}
+.info_about_blog p {
+    margin: 0.2em 0 0.5em 0;
+}
+.content_blog p {
+    margin: 0.5em 0 0 0;
+}
+.view_all_blog {
+    margin-top: 0.5em;
+}
+.view_all_blog a {
+    width: 100%;
+}
+
+.label-span {
+    color: #f7f7f7;
+    background-color: #D70C01;
+    margin-left: 0.5em;
+}
+.link_blog {
+    color: #D70C01;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.link_blog:hover {
+    color: #D70C01;
+}
+.info_about_blog p {
+    display: inline-block;
+}
+.right_paragraph {
+    float: right;
+}
+.image_blog {
+    text-align: center;
+}
+.image_blog img {
+   width: 100%;
+   height: auto;
+}
+/**************************** END page blog ****************************/
+
+
+/**************************** BEGIN other for pages ****************************/
+.padding_zero {
+    padding: 0;
+}
+.center_div {
+    margin-top: 4em; 
+}
+/**************************** END other for pages ****************************/
 
 
 /**************************** BEGIN footer ****************************/
 .footer {
     margin-top: 2em;
+    margin-bottom: 0;
     background-color: #f7f7f7;
     border-top: 1px solid #e7e7e7;
 }
-
 .social_panel {
     margin: 0.5em 0;
 }
-
 .social_panel li {
     -webkit-transition: -webkit-transform .7s;
     -moz-transition: -moz-transform .7s;
@@ -101,7 +188,6 @@
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
 }
-
 .social_panel li:hover {
     -webkit-transform: scale(1.3,1.3) rotate(10deg);
     -moz-transform: scale(1.3,1.3) rotate(10deg);
@@ -109,15 +195,12 @@
     -o-transform: scale(1.3,1.3) rotate(10deg);
     transform: scale(1.3,1.3) rotate(10deg);
 }
-
 .social_panel li a {
     color: #333333;
 }
-
 .social_panel li a:hover {
     color: #D70C01;
 }
-
 #copy_right p {
     margin-top: 1.2em;
 }

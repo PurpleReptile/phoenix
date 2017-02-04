@@ -18,13 +18,13 @@
                         <a href="/" title="Главная">| Главная</a>
                     </li>
                     <li>
-                        <a href="/" title="Блог">| Блог</a>
+                        <a href="/blog" title="Блог">| Блог</a>
                     </li>
                     <li>
-                        <a href="/" title="Обсуждения">| Обсуждения</a>
+                        <a href="#" title="Обсуждения">| Обсуждения</a>
                     </li>
                     <li>
-                        <a href="/" title="Приложения">| Приложения</a>
+                        <a href="#" title="Приложения">| Приложения</a>
                     </li>
                     <li>
                         <a href="/about" title="О сайте">| О сайте</a>
@@ -32,10 +32,10 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right" id="topnav">
                     <li class="nav_a">
-                        <a href="/" title="Регистрация">Регистрация</a>
+                        <a href="#" title="Регистрация">Регистрация</a>
                     </li>
                     <li class="nav_a">
-                        <a href="/" title="Вход">Вход</a>
+                        <a href="#" title="Вход">Вход</a>
                     </li>
                 </ul>
                 <form class="navbar-form navbar-right" id="field_search">
