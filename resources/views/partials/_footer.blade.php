@@ -1,9 +1,7 @@
 
 <footer class="footer">
     <div class="container">
-        
-
-        <div class="row">
+      <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 ">
                 <ul class="social_panel list-inline ">
                     <li class="facebook">

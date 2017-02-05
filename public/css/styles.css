@@ -50,13 +50,12 @@ hover-background-color: #e7e7e7;
 
 /**************************** BEGIN page welcome ****************************/
 #promo {
-    margin-top: 5em;
     text-align: center;
     background: url(../img/background.jpg) no-repeat;
     background-size: cover;
 }
 #promo .jumbotron {
-    margin: 1em 0px;
+    margin: 2em 0;
     background-color: rgba(255, 255, 255, 0.75);
 }
 .btn_general {
@@ -108,67 +107,77 @@ hover-background-color: #e7e7e7;
 /**************************** END page welcome ****************************/
 
 /**************************** BEGIN page blog ****************************/
-#block_blog {
-    margin: 1.1em 0;
-}
-.title_blog h2 {
+.title_post h2 {
     margin: 0;
 }
-.info_about_blog p {
+.info_about_post p {
     margin: 0.2em 0 0.5em 0;
 }
-.content_blog p {
+.content_post p {
     margin: 0.5em 0 0 0;
 }
-.view_all_blog {
+.view_all_post {
     margin-top: 0.5em;
 }
-.view_all_blog a {
+.view_all_post a {
     width: 100%;
 }
-
+#block_categories h3 {
+    margin-top: 0;
+}
 .label-span {
     color: #f7f7f7;
     background-color: #D70C01;
     margin-left: 0.5em;
 }
-.link_blog {
+.link_post {
     color: #D70C01;
     text-decoration: underline;
     cursor: pointer;
 }
-.link_blog:hover {
+.link_post:hover {
     color: #D70C01;
 }
-.info_about_blog p {
+.info_about_post p {
     display: inline-block;
 }
 .right_paragraph {
     float: right;
 }
-.image_blog {
+.image_post {
     text-align: center;
 }
-.image_blog img {
+.image_post img {
    width: 100%;
    height: auto;
 }
 /**************************** END page blog ****************************/
 
+/**************************** BEGIN page create post ****************************/
+#block_create_post h1 {
+    margin-top: 0;
+}
+/**************************** END page create post ****************************/
+
+/**************************** BEGIN page edit post ****************************/
+#block_edit_post h3 {
+    margin-top: 0;
+}
+/**************************** BEGIN page edit post ****************************/
 
 /**************************** BEGIN other for pages ****************************/
 .padding_zero {
     padding: 0;
 }
 .center_div {
-    margin-top: 4em; 
+    margin-top: 5em; 
+    margin-bottom: 3em;
 }
 /**************************** END other for pages ****************************/
 
 
 /**************************** BEGIN footer ****************************/
 .footer {
-    margin-top: 2em;
     margin-bottom: 0;
     background-color: #f7f7f7;
     border-top: 1px solid #e7e7e7;

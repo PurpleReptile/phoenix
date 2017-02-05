@@ -3,8 +3,9 @@
 @section('title', '| Главная')
 
 @section('content')
-<div id="promo">
-    <div class="container">
+
+<div id='promo'>
+    <div class='container'>
         <div class="jumbotron">
             <h1>Добро пожаловать!</h1>
             <p>Сайт для всех и ни для кого
