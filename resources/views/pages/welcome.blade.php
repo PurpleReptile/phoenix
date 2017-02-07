@@ -22,21 +22,15 @@
                 <h3>Блог</h3>
             </div>
             <ul class="welcome_li">
+
+                @foreach($posts as $post)
+
                 <li class="invalid nav-item">
-                    <a>| Мой сосед - дрель</a>
+                    <a href="#">| {{ $post->title }}</a>
                 </li>
-                <li class="invalid nav-item">
-                    <a>| Пигментация кожи не спасает от очередей</a>
-                </li>
-                <li class="invalid nav-item">
-                    <a>| Бегал по стенам? - Легко!</a>
-                </li>
-                <li class="invalid nav-item">
-                    <a>| Артроплевра</a>
-                </li>
-                <li class="invalid nav-item">
-                    <a>| Почему Майкл Джексон не любил загорать?</a>
-                </li>
+
+                @endforeach
+
             </ul>
         </div>
         <div class="col-sm-4">

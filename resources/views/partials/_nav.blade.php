@@ -4,7 +4,7 @@
             <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggle_topnav">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span>  
+                <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
                 <img src="../../../public/img/smile.svg">
@@ -17,7 +17,7 @@
                     <a href="/" title="Главная">| Главная</a>
                 </li>
                 <li>
-                    <a href="/blog" title="Блог">| Блог</a>
+                    <a href="/posts" title="Блог">| Блог</a>
                 </li>
                 <li>
                     <a href="#" title="Обсуждения">| Обсуждения</a>

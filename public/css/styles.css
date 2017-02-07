@@ -106,6 +106,7 @@ hover-background-color: #e7e7e7;
 }
 /**************************** END page welcome ****************************/
 
+
 /**************************** BEGIN page blog ****************************/
 .title_post h2 {
     margin: 0;
@@ -153,17 +154,26 @@ hover-background-color: #e7e7e7;
 }
 /**************************** END page blog ****************************/
 
+
 /**************************** BEGIN page create post ****************************/
 #block_create_post h1 {
     margin-top: 0;
 }
 /**************************** END page create post ****************************/
 
+
 /**************************** BEGIN page edit post ****************************/
 #block_edit_post h3 {
     margin-top: 0;
 }
-/**************************** BEGIN page edit post ****************************/
+/**************************** END page edit post ****************************/
+
+/**************************** BEGIN page show posts ****************************/
+#top_panel_show_posts h1 {
+    margin: 0;
+}
+/**************************** END page show posts ****************************/
+
 
 /**************************** BEGIN other for pages ****************************/
 .padding_zero {
