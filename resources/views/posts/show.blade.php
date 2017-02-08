@@ -35,16 +35,21 @@
         <div class="col-md-4">
             <div id="block_edit_post">
 
-                <div class="well well-sm">
+                <div class="well">
 
                     <dl class="dl-horizontal">
-                        <dt>Создан:</dt>
-                        <dd>{{ date('j F Y H:i', strtotime($post->created_at)) }}</dd>
+                        <label>Адрес записи:</label>
+                        <p><a href="{{ route('blog.single', $post->slug) }}"> {{ route('blog.single', $post->slug) }}</a></p>
                     </dl>
 
                     <dl class="dl-horizontal">
-                        <dt>Обновлён:</dt>
-                        <dd>{{ date('j F Y H:i', strtotime($post->updated_at)) }}</dd>
+                        <label>Создан:</label>
+                        <p>{{ date('j F Y H:i', strtotime($post->updated_at)) }}</p>
+                    </dl>
+
+                    <dl class="dl-horizontal">
+                        <label>Обновлён:</label>
+                        <p>{{ date('j F Y H:i', strtotime($post->updated_at)) }} </p>
                     </dl>
 
                     <div class="row">

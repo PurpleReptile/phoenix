@@ -13,11 +13,11 @@
         </div>
         <div id="toggle_topnav" class="collapse navbar-collapse">
             <ul class="nav navbar-nav" id="topnav">
-                <li class="active_li">
+                <li class="{{ Request::is('/') ? "active_li" : "" }}" >
                     <a href="/" title="Главная">| Главная</a>
                 </li>
-                <li>
-                    <a href="/posts" title="Блог">| Блог</a>
+                <li class="{{ Request::is('blog') ? "active_li" : "" }}" >
+                    <a href="/blog" title="Блог">| Блог</a>
                 </li>
                 <li>
                     <a href="#" title="Обсуждения">| Обсуждения</a>
@@ -25,7 +25,7 @@
                 <li>
                     <a href="#" title="Приложения">| Приложения</a>
                 </li>
-                <li>
+                <li class="{{ Request::is('about') ? "active_li" : "" }}" >
                     <a href="/about" title="О сайте">| О сайте</a>
                 </li>
             </ul>

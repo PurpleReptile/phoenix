@@ -20,19 +20,23 @@
                 {!! Form::open(['route' => 'posts.store', 'data-parsley-validate']) !!}
 
                 {{ Form::label('title', 'Заголовок:') }}
-                {{ Form::text('title', null, array('class' => 'form-control', 'required' => '', 'maxlength' => '160')) }}
+                {{ Form::text('title', null, array('class' => 'form-control', 'required' => '', 'maxlength' => '160'))
+                    }}
+
+                {{ Form::label('slug', 'Slug:') }}
+                {{ Form::text('slug', null, array('class' => 'form-control', 'required' => '', 'minlength' => '5', 'maxlength' => '255')) }}
 
                 {{ Form::label('body', 'Содержимое:') }}
-                {{ Form::textarea('body', null, array('class' => 'form-control', 'required' => '')) }}
+                {{ Form::textarea('body', null, array('class' => 'form-control', 'required' => '', 'minlength' => '50')) }}
 
-                {{ Form::submit('Создать пост', array('class' => 'btn btn_general btn-block')) }} 
+                {{ Form::submit('Создать пост', array('class' => 'btn btn_general btn-block')) }}
 
                 {!! Form::close() !!}
 
-            </div> 
+            </div>
         </div>
     </div>
-    
+
 </div>
 
 @endsection

@@ -13,6 +13,9 @@
             {{ Form::label('title', 'Заголовок:') }}
             {{ Form::text('title', null, ["class" => 'form-control input-lg']) }}
 
+            {{ Form::label('slug', 'Slug:') }}
+            {{ Form::text('slug', null, ['class' => 'form-control']) }}
+
             {{ Form::label('body', 'Содержимое:') }}
             {{ Form::textarea('body', null, ["class" => 'form-control']) }}
         </div>
@@ -23,13 +26,13 @@
                 <div class="well">
 
                     <dl class="dl-horizontal">
-                        <dt>Создан:</dt>
-                        <dd>{{ date('j F Y H:i', strtotime($post->created_at)) }}</dd>
+                        <label>Создан:</label>
+                        <p>{{ date('j F Y H:i', strtotime($post->created_at)) }}</p>
                     </dl>
 
                     <dl class="dl-horizontal">
-                        <dt>Обновлён:</dt>
-                        <dd>{{ date('j F Y H:i', strtotime($post->updated_at)) }}</dd>
+                        <label>Обновлён:</label>
+                        <p>{{ date('j F Y H:i', strtotime($post->updated_at)) }}</p>
                     </dl>
                     <hr>
 

@@ -38,9 +38,9 @@
                     @foreach($posts as $post)
 
                     <tr>
-                        <td> {{ $post->id}} </td>
-                        <td> {{ $post->title}} </td>
-                        <td> {{ substr($post->body, 0, 50)}}{{ strlen($post->body) > 50 ? "..." : "" }} </td>
+                        <td> {{ $post->id }} </td>
+                        <td> {{ $post->title }} </td>
+                        <td> {{ mb_substr($post->body, 0, 50) }}{{ strlen($post->body) > 50 ? "..." : "" }}</td>
                         <td> {{ date('j F Y', strtotime($post->created_at)) }} </td>
                         <td>
                             <a href="{{ route('posts.show', $post->id) }}" class="btn btn_general btn-sm">Показать</a>

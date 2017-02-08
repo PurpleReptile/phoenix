@@ -26,7 +26,7 @@
                 @foreach($posts as $post)
 
                 <li class="invalid nav-item">
-                    <a href="#">| {{ $post->title }}</a>
+                    <a href="{{ url('blog/'.$post->slug) }}">| {{ $post->title }}</a>
                 </li>
 
                 @endforeach
