@@ -6,8 +6,8 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-sm-2">
-            <div id="block_categories">
+        <div class="col-md-2">
+            <div id="block_categories" data-spy="affix" data-offset-top="65">
                 <h3>Категории</h3>
                 <ul class="welcome_li">
                     <li class="invalid nav-item">
@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div class="col-sm-8">
+        <div class="col-md-8">
 
             @foreach($posts as $post)
             <div id="block_post" class="content">
@@ -43,7 +43,7 @@
                         <a class="link_post" title="интернет">интернет</a>
                     </p>
                     <p class="right_paragraph">
-                        Опубликовал: Иван Петрович, {{ date('j-m-Y', strtotime($post->created_at)) }}
+                        Опубликовал: Василий Петрович, {{ date('j-m-Y', strtotime($post->created_at)) }}
                     </p>
                 </div>
                 {{-- <div class="image_post">
@@ -51,10 +51,10 @@
                 </div> --}}
                 <div class="content_post">
                     <p class="text-justify">
-                        {{ $post->body }}
+                        {{ mb_substr($post->body, 0, 800) }}{{ strlen($post->body) > 800 ? "..." : "" }}
                     </p>
                 </div>
-                <div class="view_all_post">
+                <div class="view_post">
                     <a href="{{ url('blog/'.$post->slug) }}" class="btn btn_general" role="button" title="Читать дальше">Читать дальше</a>
                 </div>
             </div>

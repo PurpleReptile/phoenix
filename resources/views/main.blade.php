@@ -10,6 +10,9 @@
         <div class="center_div">
 
             @include('partials._messages')
+
+            {{-- {{ Auth::check() ? "Logged In" : "Logged Out" }} --}}
+
             @yield('content')
 
         </div>
