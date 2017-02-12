@@ -36,7 +36,9 @@
                     <li class="dropdown">
                         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Привет, {{ Auth::user()->name }}<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu" >
-                            <li><a href=" {{ route('posts.index') }} ">Все посты</a></li>
+                            <li><a href=" {{ route('posts.index') }} ">Посты</a></li>
+                            <li><a href=" {{ route('categories.index') }} ">Категории</a></li>
+                            <li><a href=" {{ route('tags.index') }} ">Тэги</a></li>
                             <li class="divider"></li>
                             <li><a href="{{ route('logout') }}">Выйти</a></li>
                         </ul>

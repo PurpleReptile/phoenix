@@ -36,9 +36,7 @@
                 </div>
                 <div class="info_about_post">
                     <p>Тема:
-                    	<a class="link_post" title="авто">авто</a>,
-                    	<a class="link_post" title="природа">природа</a>,
-                    	<a class="link_post" title="интернет">интернет</a>
+                    	<a class="link_post" title="{{ mb_convert_case($post->category->name, MB_CASE_LOWER, "UTF-8") }}">{{ mb_convert_case($post->category->name, MB_CASE_LOWER, "UTF-8") }}</a>
                     </p>
                     <p class="right_paragraph">
                     	Опубликовал: Иван Петрович, {{date('j-m-Y', strtotime($post->created_at)) }}

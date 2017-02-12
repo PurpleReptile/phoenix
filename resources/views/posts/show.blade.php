@@ -13,9 +13,7 @@
                 </div>
                 <div class="info_about_post">
                     <p>Тема:
-                        <a class="link_post" title="авто">авто</a>,
-                        <a class="link_post" title="природа">природа</a>,
-                        <a class="link_post" title="интернет">интернет</a>
+                        <a class="link_post" title="{{ $post->category->name }}">{{ $post->category->name}}</a>,
                     </p>
                     <p class="right_paragraph">
                         Опубликовал: Иван Петрович, {{date('j-m-Y', strtotime($post->created_at)) }}
@@ -29,6 +27,13 @@
                         {{ $post->body }}
                     </p>
                 </div>
+                <hr>
+                <div class="tags">
+                    @foreach($post->tags as $tag)
+                        <span class="label label-default">{{ $tag->name }}</span>
+                    @endforeach                    
+                </div>
+
             </div>
         </div>
 
@@ -40,6 +45,11 @@
                     <dl class="dl-horizontal">
                         <label>Адрес записи:</label>
                         <p><a href="{{ route('blog.single', $post->slug) }}"> {{ route('blog.single', $post->slug) }}</a></p>
+                    </dl>
+
+                    <dl class="dl-horizontal">
+                        <label>Категория:</label>
+                        <p>{{ $post->category->name }}</p>
                     </dl>
 
                     <dl class="dl-horizontal">

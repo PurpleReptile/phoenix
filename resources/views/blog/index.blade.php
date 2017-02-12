@@ -10,21 +10,15 @@
             <div id="block_categories" data-spy="affix" data-offset-top="65">
                 <h3>Категории</h3>
                 <ul class="welcome_li">
-                    <li class="invalid nav-item">
-                        <a>| Авто<span class="label label-span">15</span></a>
-                    </li>
-                    <li class="invalid nav-item">
-                        <a>| Наука<span class="label label-span">7</span></a>
-                    </li>
-                    <li class="invalid nav-item">
-                        <a>| Спорт<span class="label label-span">3</span></a>
-                    </li>
-                    <li class="invalid nav-item">
-                        <a>| Природа<span class="label label-span">19</span></a>
-                    </li>
-                    <li class="invalid nav-item">
-                        <a>| Интернет<span class="label label-span">21</span></a>
-                    </li>
+
+                    @foreach($categories as $category)
+
+                        <li class="invalid nav-item">
+                            <a>| {{ $category->name }}<span class="label label-span">15</span></a>
+                        </li>
+
+                    @endforeach
+
                 </ul>
             </div>
         </div>

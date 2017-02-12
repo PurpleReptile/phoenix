@@ -11,16 +11,16 @@
 |
  */
 
-Route::group(['middleware' => ['web']], function () {
+Route::group(['middleware' => ['web']], function () 
+{
 
 	// registration routes
 	Auth::routes();
 	Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-	// Route::get('logout', function () {
-	// 	Auth::logout();
-	// 	return redirect('/');
-	// });
+	// categories
+	Route::resource('categories', 'CategoryController', ['except' => ['create']]);
+	Route::resource('tags', 'TagController', ['except' => ['create']]);
 
 	// blog routes
 	Route::get('blog/{slug}', ['uses' => 'BlogController@getSingle', 'as' => 'blog.single']);
