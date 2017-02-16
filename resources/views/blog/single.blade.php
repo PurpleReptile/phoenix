@@ -6,30 +6,24 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-sm-2">
+        <div class="col-md-2">
             <div id="block_categories">
                 <h3>Категории</h3>
                 <ul class="welcome_li">
+
+                @foreach($categories as $category)
+
                     <li class="invalid nav-item">
-                        <a>| Авто<span class="label label-span">15</span></a>
+                        <a>| {{ $category->name }}<span class="label label-span">{{ $category->count }}</span></a>
                     </li>
-                    <li class="invalid nav-item">
-                        <a>| Наука<span class="label label-span">7</span></a>
-                    </li>
-                    <li class="invalid nav-item">
-                        <a>| Спорт<span class="label label-span">3</span></a>
-                    </li>
-                    <li class="invalid nav-item">
-                        <a>| Природа<span class="label label-span">19</span></a>
-                    </li>
-                    <li class="invalid nav-item">
-                        <a>| Интернет<span class="label label-span">21</span></a>
-                    </li>
+
+                @endforeach
+
                 </ul>
             </div>
         </div>
 
-        <div class="col-sm-8">
+        <div class="col-md-8">
             <div id="block_post" class="content">
                 <div class="title_post">
                     <h2>{{ $post->title }}</h2>

@@ -3,39 +3,55 @@
         << general >>
 
 color:                  #f7f7f7;
-background-color:       #D70C01;
+background-color:       #D50000; 
 border-color:           #f7f7f7;
 
         << link <a> >> 
 
 color:                  #333;
-hover-color:            #D70C01;
+hover-color:            #D50000; 
 hover-background-color: #e7e7e7;
 
 */
 
+/**************************** BEGIN general ****************************/
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px;
+}
+body > .container-fluid {
+    padding: 60px 0 40px 0;
+}
+/**************************** END general ****************************/
+
+
 /**************************** BEGIN navigator ****************************/
 #topnav_main {
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
     background-color: #f7f7f7;
+    border: none;
 }
-#topnav_main .navbar-brand {
-    margin-left: 0px;
-}
+    #topnav_main .navbar-brand {
+        margin-left: 0px;
+    }
 .navbar-brand {
     padding: 0px;
 }
-.navbar-brand>img {
-    height: 100%;
-    padding: 0.5em 0.5em 0.5em 0;
-    width: auto;
-}
+    .navbar-brand>img {
+        height: 100%;
+        padding: 0.5em 0.5em 0.5em 0;
+        width: auto;
+    }
 #topnav_left a, #topnav_right a {
     color: #333;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
 #topnav_left a:hover, #topnav_right a:hover {
-    color: #D70C01;
+    color: #D50000;
     background-color: #e7e7e7;
 }
 .navbar-right {
@@ -43,36 +59,36 @@ hover-background-color: #e7e7e7;
 }
 #topnav_main .active_li > a {
     color: #f7f7f7;
-    background-color: #D70C01;
+    background-color: #D50000;
 }
 /**************************** END navigator ****************************/
 
 
+
 /**************************** BEGIN page welcome ****************************/
-#promo {
-    text-align: center;
+.promo {
     background: url(../img/background.jpg) no-repeat;
     background-size: cover;
+    padding: 2em 0 ;
 }
-#promo .jumbotron {
-    margin: 2em 0;
+.jumbotron {
     background-color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 0;
 }
 .btn_general {
-    border: 0.1em solid  #D70C01;
+    border: 0.1em solid  #D50000;
     color: #333;
     background-color: white;
 }
 .btn_general:hover {
     color: #f7f7f7;
-    background-color: #D70C01;
+    background-color: #D50000;
     border-color: #f7f7f7;
     transition-duration: 0.6s;
     -ms-transition-duration: 0.6s;
     -moz-transition-duration: 0.6s;
     -webkit-transition-duration: 0.6s;  
-    box-shadow: 0px 0px 0.4em 1px rgba(0,0,0,0.75);
-    /* box-shadow: 0px 0px 0px 2em #D70C01 inset, 0px 3px 3px -1px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
 }
 .indent_left {
     margin-left: 0.5em;
@@ -86,24 +102,24 @@ hover-background-color: #e7e7e7;
     text-indent: -0.5em;
     list-style: none;
 }
-.welcome_li li {
-    cursor: pointer;
-    padding-bottom: 0.2em;
-}
-.welcome_li li:last-child {
-    padding-bottom: 0px;
-}
-.welcome_li a {
-    color: #333;
-    text-decoration: none;
-    display: block; 
-    width: 100%; 
-    height: 100%;
-    padding: 0.1em 0;
-}
-.welcome_li a:hover {
-    color: #D70C01;
-    background-color: #e7e7e7;
+    .welcome_li li {
+        cursor: pointer;
+        padding-bottom: 0.2em;
+    }
+    .welcome_li li:last-child {
+        padding-bottom: 0px;
+    }
+    .welcome_li a {
+        color: #333;
+        text-decoration: none;
+        display: block; 
+        width: 100%; 
+        height: 100%;
+        padding: 0.1em 0;
+    }
+    .welcome_li a:hover {
+        color: #D50000;
+        background-color: #e7e7e7;
 }
 /**************************** END page welcome ****************************/
 
@@ -135,16 +151,16 @@ hover-background-color: #e7e7e7;
     }
 .label-span {
     color: #f7f7f7;
-    background-color: #D70C01;
+    background-color: #D50000;
     margin-left: 0.8em;
 }
 .link_post {
-    color: #D70C01;
+    color: #D50000;
     text-decoration: underline;
     cursor: pointer;
 }
 .link_post:hover {
-    color: #D70C01;
+    color: #D50000;
 }
 .info_about_post p {
     display: inline-block;
@@ -202,49 +218,51 @@ hover-background-color: #e7e7e7;
 }
 /**************************** END other for pages ****************************/
 
-/**************************** BEGIN registration page ****************************/
-#block_top_registration h2 {
-    margin: 0;
-}
-
-/**************************** END registration page ****************************/
-
 
 /**************************** BEGIN footer ****************************/
 .footer {
-    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
     background-color: #f7f7f7;
-    border-top: 1px solid #e7e7e7;
+    box-shadow: 0 -1px 5px rgba(0,0,0,.26); 
 }
 .social_panel {
     margin: 0.5em 0;
 }
-.social_panel li {
-    -webkit-transition: -webkit-transform .7s;
-    -moz-transition: -moz-transform .7s;
-    -ms-transition: -ms-transform .7s;
-    -o-transition: -o-transform .7s;
-    transition: transform .7s;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-}
-.social_panel li:hover {
-    -webkit-transform: scale(1.3,1.3) rotate(10deg);
-    -moz-transform: scale(1.3,1.3) rotate(10deg);
-    -ms-transform: scale(1.3,1.3) rotate(10deg);
-    -o-transform: scale(1.3,1.3) rotate(10deg);
-    transform: scale(1.3,1.3) rotate(10deg);
-}
-.social_panel li a {
-    color: #333333;
-}
-.social_panel li a:hover {
-    color: #D70C01;
-}
-#copy_right p {
+    .social_panel li:first-child {
+        padding-left: 0;
+    }
+    .social_panel li {
+        -webkit-transition: -webkit-transform .7s;
+        -moz-transition: -moz-transform .7s;
+        -ms-transition: -ms-transform .7s;
+        -o-transition: -o-transform .7s;
+        transition: transform .7s;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    .social_panel li:hover {
+        -webkit-transform: scale(1.3,1.3) rotate(10deg);
+        -moz-transform: scale(1.3,1.3) rotate(10deg);
+        -ms-transform: scale(1.3,1.3) rotate(10deg);
+        -o-transform: scale(1.3,1.3) rotate(10deg);
+        transform: scale(1.3,1.3) rotate(10deg);
+    }
+    .social_panel li a {
+        color: #333333;
+    }
+    .social_panel li a:hover {
+        color: #D50000;
+    }
+.copyright_p {
     margin-top: 1.2em;
 }
+/* #copy_right p {
+    margin-top: 1.2em;
+} */
 /**************************** END footer ****************************/

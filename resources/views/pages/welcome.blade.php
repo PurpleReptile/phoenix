@@ -4,9 +4,9 @@
 
 @section('content')
 
-<div id='promo'>
-    <div class='container'>
-        <div class="jumbotron">
+<div class="promo">
+    <div class="container">
+        <div class="jumbotron text-center">
             <h1>Добро пожаловать!</h1>
             <p>Сайт для всех и ни для кого
                 <a href="/about" class="btn btn_general" role="button" title="О сайте">О сайте</a>
@@ -17,7 +17,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <div class="page-header">
                 <h3>Блог</h3>
             </div>
@@ -33,7 +33,7 @@
 
             </ul>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <div class="page-header">
                 <h3>Обсуждения</h3>
             </div>
@@ -55,7 +55,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <div class="page-header">
                 <h3>Приложения</h3>
             </div>

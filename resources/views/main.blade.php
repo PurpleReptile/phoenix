@@ -7,20 +7,13 @@
     <body>
         @include('partials._nav')
 
-        <div class="center_div">
-
+        <div class="container-fluid">
             @include('partials._messages')
-
-            {{-- {{ Auth::check() ? "Logged In" : "Logged Out" }} --}}
-
             @yield('content')
-
         </div>
 
         @include('partials._footer')
-
         @include('partials._javascript')
-
         @yield('scripts')
     </body>
 

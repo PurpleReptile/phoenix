@@ -3,11 +3,8 @@
 @section('content')
 <div class="container">
 
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1" id="block_top_registration">
-            <h2>Регистрация</h2>
-            <hr>
-        </div>
+    <div class="page-header">   
+        <h2>Регистрация</h2>
     </div>
 
     <div class="row">
@@ -18,7 +15,7 @@
             <div class="form-group">
                 {{ Form::label('name', 'Имя', ['class' => 'control-label col-md-4'])}}
                 <div class="col-md-8">
-                    {{ Form::text('name', null, ['class' => 'form-control form_control', 'placeholder' => 'Введите имя']) }}
+                    {{ Form::text('name', null, ['class' => 'form-control form_control', 'placeholder' => 'Введите имя', 'autofocus']) }}
                 </div>
             </div>
 

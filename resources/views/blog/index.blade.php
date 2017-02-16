@@ -7,14 +7,14 @@
     <div class="row">
 
         <div class="col-md-2">
-            <div id="block_categories" data-spy="affix" data-offset-top="65">
+            <div class="hidden-xs hidden-sm" id="block_categories" data-spy="affix" data-offset-top="65">
                 <h3>Категории</h3>
                 <ul class="welcome_li">
 
                     @foreach($categories as $category)
 
                         <li class="invalid nav-item">
-                            <a>| {{ $category->name }}<span class="label label-span">15</span></a>
+                            <a>| {{ $category->name }}<span class="label label-span">{{ $category->count }}</span></a>
                         </li>
 
                     @endforeach
@@ -32,9 +32,7 @@
                 </div>
                 <div class="info_about_post">
                     <p>Тема:
-                        <a class="link_post" title="авто">авто</a>,
-                        <a class="link_post" title="природа">природа</a>,
-                        <a class="link_post" title="интернет">интернет</a>
+                        <a class="link_post" title="{{ mb_convert_case($post->category->name, MB_CASE_LOWER, "UTF-8") }}">{{ mb_convert_case($post->category->name, MB_CASE_LOWER, "UTF-8") }}</a>
                     </p>
                     <p class="right_paragraph">
                         Опубликовал: Василий Петрович, {{ date('j-m-Y', strtotime($post->created_at)) }}
@@ -53,6 +51,10 @@
                 </div>
             </div>
             @endforeach
+
+            <div class="text-center">
+                {!! $posts->links(); !!}
+            </div>
 
         </div>
 
