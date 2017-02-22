@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 use App\Post;
 
-class PagesController extends Controller {
+class PagesController extends Controller 
+{
 
 	public function getIndex() {
 

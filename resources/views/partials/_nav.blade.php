@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-                <img class="logo" src="../../../public/img/smile.svg">
+                <img class="logo" src="../../../public/images/smile.svg">
             </a>
 
         </div>

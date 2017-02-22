@@ -14,6 +14,7 @@ class ComposerStaticInita76aa45ee04368005390689a47222e38
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
@@ -60,6 +61,7 @@ class ComposerStaticInita76aa45ee04368005390689a47222e38
         array (
             'Psy\\' => 4,
             'Psr\\Log\\' => 8,
+            'Psr\\Http\\Message\\' => 17,
             'PhpParser\\' => 10,
         ),
         'M' => 
@@ -72,7 +74,12 @@ class ComposerStaticInita76aa45ee04368005390689a47222e38
         ),
         'I' => 
         array (
+            'Intervention\\Image\\' => 19,
             'Illuminate\\' => 11,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
         ),
         'F' => 
         array (
@@ -195,6 +202,10 @@ class ComposerStaticInita76aa45ee04368005390689a47222e38
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -207,9 +218,17 @@ class ComposerStaticInita76aa45ee04368005390689a47222e38
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
         ),
+        'Intervention\\Image\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image',
+        ),
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
         'Faker\\' => 
         array (
@@ -310,6 +329,7 @@ class ComposerStaticInita76aa45ee04368005390689a47222e38
 
     public static $classMap = array (
         'AddCategoryIdToPosts' => __DIR__ . '/../..' . '/database/migrations/2017_02_11_121711_add_category_id_to_posts.php',
+        'AddImageColToPosts' => __DIR__ . '/../..' . '/database/migrations/2017_02_18_120219_add_image_col_to_posts.php',
         'AddSlugToPosts' => __DIR__ . '/../..' . '/database/migrations/2017_02_08_091946_add_slug_to_posts.php',
         'CreateCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_11_121329_create_categories_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',

@@ -13,9 +13,9 @@
             {!! Form::open(['class' => 'form-horizontal']) !!}
 
             <div class="form-group">
-                {{ Form::label('name', 'Имя', ['class' => 'control-label col-md-4'])}}
+                {{ Form::label('name', 'Логин', ['class' => 'control-label col-md-4'])}}
                 <div class="col-md-8">
-                    {{ Form::text('name', null, ['class' => 'form-control form_control', 'placeholder' => 'Введите имя', 'autofocus']) }}
+                    {{ Form::text('name', null, ['class' => 'form-control form_control', 'placeholder' => 'Введите логин', 'autofocus']) }}
                 </div>
             </div>
 

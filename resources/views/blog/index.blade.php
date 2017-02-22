@@ -38,12 +38,12 @@
                         Опубликовал: Василий Петрович, {{ date('j-m-Y', strtotime($post->created_at)) }}
                     </p>
                 </div>
-                {{-- <div class="image_post">
-                    <img class="img-thumbnail" src="../../../public/img/blogs/blog_1.jpg" />
-                </div> --}}
+                <div class="image_post">
+                    <img class="img-thumbnail" src="{{ asset('images/' . $post->image) }}" >
+                </div>
                 <div class="content_post">
                     <p class="text-justify">
-                        {{ mb_substr($post->body, 0, 800) }}{{ strlen($post->body) > 800 ? "..." : "" }}
+                        {{ mb_substr(strip_tags($post->body), 0, 800) }}{{ strlen(strip_tags($post->body)) > 800 ? "..." : "" }}
                     </p>
                 </div>
                 <div class="view_post">

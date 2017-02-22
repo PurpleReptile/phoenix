@@ -24,7 +24,7 @@
                 </div>
                 <div class="content_post">
                     <p class="text-justify">
-                        {{ $post->body }}
+                        {!! $post->body !!}
                     </p>
                 </div>
                 <hr>

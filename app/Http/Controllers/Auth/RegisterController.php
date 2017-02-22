@@ -65,7 +65,8 @@ class RegisterController extends Controller {
 		]);
 	}
 
-	public function getRegister() {
+	public function getRegister() 
+	{
 		return view('auth.register');
 	}
 }

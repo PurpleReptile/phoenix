@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddCategoryIdToPosts' => $baseDir . '/database/migrations/2017_02_11_121711_add_category_id_to_posts.php',
+    'AddImageColToPosts' => $baseDir . '/database/migrations/2017_02_18_120219_add_image_col_to_posts.php',
     'AddSlugToPosts' => $baseDir . '/database/migrations/2017_02_08_091946_add_slug_to_posts.php',
     'CreateCategoriesTable' => $baseDir . '/database/migrations/2017_02_11_121329_create_categories_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',

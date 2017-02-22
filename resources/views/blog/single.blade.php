@@ -37,11 +37,11 @@
                     </p>
                 </div>
                 <div class="image_post">
-                	<img class="img-thumbnail" src="../../../public/img/blogs/blog_1.jpg" />
+                	<img class="img-thumbnail" src="{{ asset('images/' . $post->image) }}" />
                 </div>
                 <div class="content_post">
                 	<p class="text-justify">
-                		{{ $post->body}}
+                		{!! $post->body !!}
                 	</p>
                 </div>
             </div>

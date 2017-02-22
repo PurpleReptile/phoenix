@@ -8,6 +8,7 @@ use App\Category;
 use App\Tag;
 use App\Post;
 use Session;
+use Image;
 
 class PostController extends Controller {
 
@@ -16,7 +17,8 @@ class PostController extends Controller {
 	 *
 	 * @return \Illuminate\Http\Response
 	 */
-	public function index() {
+	public function index() 
+	{
 		$posts = Post::orderBy('id', 'desc')->paginate(10);
 		return view('posts.index')->withPosts($posts);
 	}
@@ -57,6 +59,18 @@ class PostController extends Controller {
 		$post->slug = $request->slug;
 		$post->category_id = $request->category_id;
 		$post->body = $request->body;
+
+
+		// save image 
+		if	($request->hasFile('featured_image')) 
+		{
+			$image = $request->file('featured_image');
+			$filename = time() . '.' . $image->getClientOriginalExtension();
+			$location = public_path('images/' . $filename);
+			Image::make($image)->resize(800, 400)->save($location);
+
+			$post->image = $filename;
+		}
 
 		$post->save();
 
@@ -154,12 +168,12 @@ class PostController extends Controller {
 	 */
 	public function destroy($id) 
 	{
-
 		$post = Post::find($id);
+		$post->tags()->detach();
 
 		$post->delete();
 
-		Session::flash('success', 'Пост №' . $post->id . ' был успешно удалён.');
+		Session::flash('success', 'Публикация №' . $post->id . ' была успешно удалена.');
 		return redirect()->route('posts.index');
 	}
 

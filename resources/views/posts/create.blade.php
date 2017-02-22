@@ -5,6 +5,14 @@
 @section('stylesheets')
     {!! Html::style('css/parsley.css') !!}
     {!! Html::style('css/select2.min.css') !!}
+    <script src="//cloud.tinymce.com/stable/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'link code',
+            menubar: false
+        });    
+    </script>
 @endsection
 
 @section('content')
@@ -17,8 +25,8 @@
 
                 <h1>Создать новый пост</h1>
                 <hr>
-
-                {!! Form::open(['route' => 'posts.store', 'data-parsley-validate']) !!}
+            
+                {!! Form::open(['route' => 'posts.store', 'data-parsley-validate' => '', 'files' => true]) !!}
 
                 {{ Form::label('title', 'Заголовок:') }}
                 {{ Form::text('title', null, array('class' => 'form-control', 'required' => '', 'maxlength' => '160')) }}
@@ -39,9 +47,12 @@
                         <option value="{{ $tag->id }}">{{ $tag->name }}</option>
                     @endforeach
                 </select>
+                
+                {{ Form::label('featured_image', 'Загрузить изображение') }}
+                {{ Form::file('featured_image') }}
 
                 {{ Form::label('body', 'Содержимое:') }}
-                {{ Form::textarea('body', null, array('class' => 'form-control', 'required' => '', 'minlength' => '50')) }}
+                {{ Form::textarea('body', null, array('class' => 'form-control', 'minlength' => '50')) }}
 
                 {{ Form::submit('Создать пост', array('class' => 'btn btn_general btn-block')) }}
 

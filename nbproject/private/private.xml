@@ -4,10 +4,16 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/W:/Work%20and%20other/Sites/phoenix/app/Http/Controllers/PostController.php</file>
-            <file>file:/W:/Work%20and%20other/Sites/phoenix/resources/views/pages/blog.blade.php</file>
+            <file>file:/W:/Work%20and%20other/Sites/phoenix/app/Http/Controllers/TagController.php</file>
+            <file>file:/W:/Work%20and%20other/Sites/phoenix/resources/views/pages/about.blade.php</file>
+            <file>file:/W:/Work%20and%20other/Sites/phoenix/routes/web.php</file>
             <file>file:/W:/Work%20and%20other/Sites/phoenix/app/Http/Controllers/PagesController.php</file>
+            <file>file:/W:/Work%20and%20other/Sites/phoenix/resources/views/tags/edit.blade.php</file>
+            <file>file:/W:/Work%20and%20other/Sites/phoenix/.env</file>
             <file>file:/W:/Work%20and%20other/Sites/phoenix/app/Http/Controllers/BlogController.php</file>
+            <file>file:/W:/Work%20and%20other/Sites/phoenix/resources/views/tags/index.blade.php</file>
             <file>file:/W:/Work%20and%20other/Sites/phoenix/resources/views/blog/index.blade.php</file>
+            <file>file:/W:/Work%20and%20other/Sites/phoenix/resources/views/tags/show.blade.php</file>
         </group>
     </open-files>
 </project-private>
