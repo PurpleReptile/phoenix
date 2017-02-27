@@ -23,7 +23,7 @@
                     <a href="#" title="Обсуждения">| Обсуждения</a>
                 </li>
                 <li>
-                    <a href="#" title="Приложения">| Приложения</a>
+                    <a href="/applications" title="Приложения">| Приложения</a>
                 </li>
                 <li class="{{ Request::is('about') ? "active_li" : "" }}" >
                     <a href="/about" title="О сайте">| О сайте</a>

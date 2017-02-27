@@ -30,6 +30,10 @@ Route::group(['middleware' => ['web']], function ()
 	// page routes
 	Route::get('/', 'PagesController@getIndex');
 	Route::get('about', 'PagesController@getAbout');
+
+	//applications routes
+	Route::get('applications', 'PagesController@getApplications');
+	Route::resource('applications', 'ApplicationController');
 });
 
 // ->where('slug', '[w\d\-\_]+')
