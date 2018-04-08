@@ -23,13 +23,13 @@
             </div>
             <ul class="welcome_li">
 
-                @foreach($posts as $post)
+                {{-- @foreach($posts as $post)
 
                 <li class="invalid nav-item">
                     <a href="{{ url('blog/'.$post->slug) }}">| {{ $post->title }}</a>
                 </li>
 
-                @endforeach
+                @endforeach --}}
 
             </ul>
         </div>
