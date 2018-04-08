@@ -56,3 +56,7 @@
 
     </div>
 </footer>
+
+
+<script href="js/app.js" type="text/javascript"></script>
+
